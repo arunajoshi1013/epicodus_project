@@ -1,63 +1,304 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <meta charset="utf-8">
-    <h1><u> Welcome to Aruna's Portfolio </u></h1>
-  </head>
-  <body>
+<html lang="en">
+
+<head>
+  <title>Pandamonium Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--Bootstrap, Google fonts, and my custom CSS-->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+  <!--jQuery and my custom JS-->
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/c04ff972e0.js"></script>
+  <script src="js/scripts3.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Pandamonium Parks</h1>
+
+    </div>
+    <nav class="nav nav-pills nav-justified">
+      <a class="nav-item nav-link active" href="index.html">Parks Home</a>
+      <a class="nav-item nav-link active" href="allparks.html">All Park Information</a>
+      <!-- <a class="nav-item nav-link" href="pictures.html">Fun Pictures</a> -->
+    </nav><br>
+
     <div class="container">
-      <div class="jumbotron">
-        <img src="IMG/IMG_2078.jpg"  class="img-circle">
-        <div class="About-Me">
-          <h2><em>About Me</em></h2>
-          <p> Hello, I m Aruna Joshi, a Computer Science graduate with a drive
-            to become independent and live life on my own terms, after moving
-            to Portland from India (after marriage). I like creating websites
-            and am learning to do so and I <strong>absolutely</strong> love
-            finding bugs in others' code, so, I aspire to be a
-            <span id="styleMe">Software QA Analyst</span>, having done so for an
-            year in India as  a Project Engineer at Center for Development of
-            Advanced Computing (CDAC).
-            I joined Epicodus to get a head-start as a Full Stack Web Developer.
-            <span></span>
-            As an explorer, I like to try new things out. My hobbies include,
-          </p>
-          <ul>
-            <li>Dancing.</li>
-            <li>Ultra-long 1000+ mile Roadtrips.</li>
-            <li>Tarvelling and exlporing natural wonders.</li>
-            <li>Learning new skills and technologies.</li>
-          </ul>
+      <h2>New to Pandamonium? Come explore the parks we have in store!</h2>
+      <h3>Tell us about the ammenities you are looking for!</h3>
+      <form id="amenity-selection">
+        <div class="radio-buttons">
+          <!--Playground buttons-->
+          <div class="button-set">
+            <div class="row">
+              <div class="col-sm-2">
+                <!-- amenity icon can go here -->
+              </div>
+              <div class="col-sm-3">
+                <label class="radio-inline"><strong>Pegasus Playground</strong></label>
+              </div>
+              <div class="col-sm-3">
+                <label class="radio">
+                  <input type="radio" name="playground" value=true>
+                  Need
+                </label>
+              </div>
+              <div class="col-sm-3">
+                <label class="radio">
+                  <input type="radio" name="playground" value="preferred">
+                  Prefer
+                </label>
+              </div>
+              <!-- <div class="col-sm-3s">
+              <label class="radio">
+              <input type="radio" name="playground" value="">
+              Don't care
+            </label>
+          </div> -->
         </div>
       </div>
+      <!--Parking buttons-->
+      <div class="button-set">
+        <div class="row">
+          <div class="col-sm-2">
+            <!-- amenity icon can go here -->
+          </div>
+          <div class="col-sm-3">
+            <label class="radio-inline"><strong>Broomstick Parking</strong></label>
+          </div>
+          <div class="col-sm-3">
+            <label class="radio">
+              <input type="radio" name="parking" value=true>
+              Need
+            </label>
+          </div>
+          <div class="col-sm-3">
+            <label class="radio">
+              <input type="radio" name="parking" value="preferred">
+              Prefer
+            </label>
+          </div>
+          <!-- <div class="col-sm-3s">
+          <label class="radio">
+          <input type="radio" name="parking" value="">
+          Don't care
+        </label>
+      </div> -->
     </div>
-    <div class="container">
-      <h3><strong>My Epicodus Project Links</strong></h3>
-      <ol>
-        <div class="well well-sm">
-        <li>
-          <a href="https://github.com/arunajoshi1013/EpicodusPrograms/">My first
-             Demo project at Epicodus</a>
-        </li>
-        <li>
-          <a href="https://github.com/arunajoshi1013/Fish">Working with columns,
-            images,floating and box models</a>
-        </li>
-        <li>
-          <a href="https://github.com/arunajoshi1013/demo">Adding Html components
-             and cascading </a>
-        </li>
-        <li>
-          <a href="https://github.com/arunajoshi1013/bootstrap">Adding Bootstrap</a>
-        </li>
+  </div>
+  <!--Garden buttons-->
+  <div class="button-set">
+    <div class="row">
+      <div class="col-sm-2">
+        <!-- amenity icon can go here -->
+      </div>
+      <div class="col-sm-3">
+        <label class="radio-inline"><strong>Fairy Garden</strong></label>
+      </div>
+      <div class="col-sm-3">
+        <label class="radio">
+          <input type="radio" name="garden" value=true>
+          Need
+        </label>
+      </div>
+      <div class="col-sm-3">
+        <label class="radio">
+          <input type="radio" name="garden" value="preferred">
+          Prefer
+        </label>
+      </div>
+      <!-- <div class="col-sm-3s">
+      <label class="radio">
+      <input type="radio" name="garden" value="">
+      Don't care
+    </label>
+  </div> -->
+</div>
+</div>
+<!--Restroom buttons-->
+<div class="button-set">
+  <div class="row">
+    <div class="col-sm-2">
+      <!-- amenity icon can go here -->
+    </div>
+    <div class="col-sm-3">
+      <label class="radio-inline"><strong>Restroom</strong></label>
+    </div>
+    <div class="col-sm-3">
+      <label class="radio">
+        <input type="radio" name="restroom" value=true>
+        Need
+      </label>
+    </div>
+    <div class="col-sm-3">
+      <label class="radio">
+        <input type="radio" name="restroom" value="preferred">
+        Prefer
+      </label>
+    </div>
+    <!-- <div class="col-sm-3s">
+      <label class="radio">
+        <input type="radio" name="restroom" value="">
+        Don't care
+      </label> -->
+    </div>
+  </div>
+  <!--Accessibility buttons-->
+  <div class="button-set">
+    <div class="row">
+      <div class="col-sm-2">
+        <!-- amenity icon can go here -->
+      </div>
+      <div class="col-sm-3">
+        <label class="radio-inline"><strong>Hoverchair Accessibility</strong></label>
+      </div>
+      <div class="col-sm-3">
+        <label class="radio">
+          <input type="radio" name="accessibility" value=true>
+          Need
+        </label>
+      </div>
+      <div class="col-sm-3">
+        <label class="radio">
+          <input type="radio" name="accessibility" value="preferred">
+          Prefer
+        </label>
+      </div>
+      <!-- <div class="col-sm-3s">
+        <label class="radio">
+          <input type="radio" name="accessibility" value="">
+          Don't care
+        </label>
+      </div> -->
+    </div>
+  </div>
+  <!--Zone buttons-->
+  <div class="button-set">
+    <div class="row">
+      <div class="col-sm-2">
+        <!-- amenity icon can go here -->
+      </div>
+      <div class="col-sm-3">
+        <label class="radio-inline"><strong>Ghost Zone</strong></label>
+      </div>
+      <div class="col-sm-3">
+        <label class="radio">
+          <input type="radio" name="zone" value=true>
+          Need
+        </label>
+      </div>
+      <div class="col-sm-3">
+        <label class="radio">
+          <input type="radio" name="zone" value="preferred">
+          Prefer
+        </label>
+      </div>
+      <!-- <div class="col-sm-3s">
+        <label class="radio">
+          <input type="radio" name="zone" value="">
+          Don't care
+        </label> -->
+      </div>
+    </div>
+    <!--Pool buttons-->
+    <div class="button-set">
+      <div class="row">
+        <div class="col-sm-2">
+          <!-- amenity icon can go here -->
         </div>
-        <ol>
+        <div class="col-sm-3">
+          <label class="radio-inline"><strong>Mermaid Pool</strong></label>
+        </div>
+        <div class="col-sm-3">
+          <label class="radio">
+            <input type="radio" name="pool" value=true>
+            Need
+          </label>
+        </div>
+        <div class="col-sm-3">
+          <label class="radio">
+            <input type="radio" name="pool" value="preferred">
+            Prefer
+          </label>
+        </div>
+        <!-- <div class="col-sm-3s">
+          <label class="radio">
+            <input type="radio" name="pool" value="">
+            Don't care
+          </label>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<button type="submit" class="btn btn-outline-dark">Submit</button>
+<button type="button" class="btn btn-outline-dark" onclick="resetForm()">Reset</button>
+<br><br>
+</form>
+<!-- <button type="button" class="btn btn-outline-dark" onclick="showAllParks()">Show All Parks</button>
+  <button type="button" class="btn btn-outline-dark" onclick="hideAllParks()">Hide All Parks</button> -->
+  <!-- <button type="button" class="btn btn-outline-dark" onclick="attributes()">Attributes</button> -->
+  <br>
+</div>
+</div>
+
+</div>
+<br>
+<!-- <button type="button" class="btn btn-outline-dark" onclick="showAllParks()">Show All Parks</button>
+  <button type="button" class="btn btn-outline-dark" onclick="hideAllParks()">Hide All Parks</button>
+  <br> -->
+
+  <!--Results div-->
+  <div class="container" id="results">
+    <div class="row">
+      <div id="no-results" class="col-sm-12 hidden">
+        Sorry, no parks matched all of your needs! Here are all of the parks:
+      </div>
+    </div>
+    <div class="row">
+      <div id="rainbow-result" class="col-sm-6 hidden">
+
+        <h5>Rainbow Park</h5>
+        <a href="rainbow.html">
+          <img src="img/Rainbow3.jpg" width="100%"></a>
         </div>
 
-  </body>
-</html>
+        <div id="dragon-result" class="col-sm-6 hidden">
+          <h5>Dragon Park</h5>
+          <a href="dragon.html">
+            <img src="img/DragonBabies.jpeg" width="100%"></a>
+          </div>
+
+          <div class="row">
+            <div id="hobbit-result" class="col-sm-6 hidden">
+              <h5>Hobbit Park</h5>
+              <a href="hobbit.html">
+                <img src="img/Hobbit.jpg" width="100%"></a>
+              </div>
+
+              <div id="galaxy-result" class="col-sm-6 hidden">
+                <h5>Galaxy Park</h5>
+                <a href="galaxy.html">
+                  <img src="img/Galaxy2.jpg" width="100%"></a>
+                </div>
+
+                <div id="unicorn-result" class="col-sm-6 hidden">
+                  <h5>Unicorn Park</h5>
+                  <a href="unicorn.html">
+                    <img src="img/UnicornNight.jpg" width="100%"></a>
+                  </div>
+                </div>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+
+      </html>

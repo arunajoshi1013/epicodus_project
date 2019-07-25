@@ -1,81 +1,109 @@
-body {
-  background-color: powderblue;
+
+html {
+  height: 100%;
 }
+
+body {
+  background-size:cover;
+  background-color: #fff7e6;
+  height: 100%;
+}
+
 h1 {
-  color: Red;
-  font-style: oblique;
-  font-size: 50px;
-  text-align: center;
+  font-size: 60px;
+  font-family:cursive;
+  text-align:center;
+  color: #155724;
+}
+h5
+  {
+   font-size: 20px;
+   font-family:cursive;
+   text-align:center;
+   color: #155724;
+   margin: 15px;
+
+}
+
+.item {
+  width:100px;
+  height:50px;
+}
+
+.parallax {
+  background-image: url("../img/rainbow2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.page-header {
+  text-transform: uppercase;
+  letter-spacing: .2em;
 }
 
 h2 {
-  color: hotpink;
-  font-style: oblique;
-  font-size: 45px;
-  text-align: center;
+  margin: 15px;
 }
 
-#styleMe {
-  color: skyblue;
+
+a.nav-item.nav-link {
+  color: #15572469;
+}
+a.nav-item.nav-link.active {
+  color: black;
+  background-color: #15572469;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-h3 {
-  color: Brown;
-  font-size: 30px;
-  text-align: center;
-  font-family: fantasy;
+nav {
+  color: #cc99ff;
 }
 
-img {
-  width: 20%;
-  float:right;
-  border-radius: 30%;
+
 }
-
-.About-Me {
-  width: 700px;
-  border: 5px solid yellow;
-
-  padding: 20px;
-  margin: 10px;
-  font-family: fantasy;
-}
-
-p{
-  font-size: 40px;
-  font-style: italic;
-  color: brown;
-}
-
-ul {
-  font-size: 25px;
-  color: lightblue;
-}
-
-/* unvisited link */
-a:link {
-  color: hotpink;
-}
-
-/* visited link */
-a:visited {
+nav a {
   color: green;
 }
-.jumbotron{
-  background-color: MediumSeaGreen;
-  text-align: justify;
-  color: grey;
+
+.jumbotron {
+  background-color: #15572469;
 }
-ol {
-  background: #ff9999;
-  padding: 20px;
+
+.checkboxes {
+  margin: 20px;
+  padding: 10px;
 }
-ol li {
-  background: #ffe5e5;
-  padding: 5px;
-  margin-left: 35px;
+
+
+div.button-set {
+  margin: 10px;
 }
-.well
-{
-  font-size: 20px;
+
+label.radio-inline {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+label.radio {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.button-set {
+  text-align: left;
+}
+
+.rainbow-paragraph{
+  font-family:inherit;
 }
